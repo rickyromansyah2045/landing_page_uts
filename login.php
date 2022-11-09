@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
-     <!-- Link Css -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/style.css">
+    <?php 
+        include "header/header.php";
+    ?>
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon.jpg"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon.jpg"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon.jpg"/>
-    <title>Login</title>
-
-</head>
 <body>
 
     <?php 
@@ -32,35 +24,19 @@
                 <small id="emailHelp" class="form-text text-muted">Email Akan Digunakan Untuk Mengirimkan Notifikasi.</small>
             </div>
             <div class="form-group">
-                <label>Jurusan</label>
-                <select name="jurusan" class="form-control">
-                        <option value="0">Pilih Jurusan</option>
-                        <option value="1">Jurusan Informatika</option>
-                        <option value="2">Jurusan Teknik Komputer Jaringan</option>
-                        <option value="3">Jurusan Multimedia</option>
-                    </select>
+                <label>City</label>
+                <input type="city" name="city" placeholder="City" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Nomer HP</label>
+                <input type="no_hp" name="no_hp" placeholder="example : 087733133913" class="form-control" required>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
-    <script>
-        function validateForm() {
-            if (document.forms["formPendaftaran"]["nama"].value == "") {
-                alert("Nama Tidak Boleh Kosong");
-                document.forms["formPendaftaran"]["nama"].focus();
-                return false;
-            }
-            if (document.forms["formPendaftaran"]["email"].value == "") {
-                alert("Email Tidak Boleh Kosong");
-                document.forms["formPendaftaran"]["email"].focus();
-                return false;
-            }
-            if (document.forms["formPendaftaran"]["jurusan"].selectedIndex < 1) {
-                alert("Pilih Jurusan.");
-                document.forms["formPendaftaran"]["jurusan"].focus();
-                return false;
-            }
-        }
-    </script>
+
+    <?php 
+            include "footer/footer.php"
+    ?>
 </body>
 </html>

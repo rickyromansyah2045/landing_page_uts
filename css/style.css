@@ -90,3 +90,8 @@ font-weight: var(--bold-font);
     justify-content: space-between; gap: 1.9rem;
     max-width: 1100px; margin: 2rem auto -6rem;
 }
+
+footer {
+    padding-top: 100px;
+    margin-top: 500px;
+}
