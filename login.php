@@ -12,7 +12,7 @@
         include "sidebar/nav2.php";
     ?>
 
-<div class="container">
+<div class="container mt-5">
         <form name="formPendaftaran" action="daftar.php" method="post" onsubmit="return validateForm()">
             <div class="form-group">
                 <label>Nama</label>
@@ -25,11 +25,11 @@
             </div>
             <div class="form-group">
                 <label>City</label>
-                <input type="city" name="city" placeholder="City" class="form-control" required>
+                <input type="text" name="city" placeholder="City" class="form-control" required>
             </div>
             <div class="form-group">
                 <label>Nomer HP</label>
-                <input type="no_hp" name="no_hp" placeholder="example : 087733133913" class="form-control" required>
+                <input type="number" name="no_hp" placeholder="example : 087733133913" class="form-control" required>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
