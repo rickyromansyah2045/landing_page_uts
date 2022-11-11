@@ -1,7 +1,7 @@
 function validateForm() {
-    if (document.forms["formPendaftaran"]["nama"].value == "") {
+    if (document.forms["formPendaftaran"]["username"].value == "") {
         alert("Nama Tidak Boleh Kosong");
-        document.forms["formPendaftaran"]["nama"].focus();
+        document.forms["formPendaftaran"]["username"].focus();
         return false;
     }
     if (document.forms["formPendaftaran"]["email"].value == "") {

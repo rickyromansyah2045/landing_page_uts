@@ -7,6 +7,9 @@
 <!-- Web Page Script -->
 <script src="js/validate.js"></script>
 
+<!-- Switch Alert -->
+<script src="js/sweetalert/sweetalert2.all.min.js"></script>
+
 <!-- Ion icons CDN -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
 </script>
