@@ -17,7 +17,7 @@
         >
         </li>
         <li class="nav-item">
-            <a href="#sub" class="nav-link" id="nav- link">Subscribe</a>
+            <a href="login.php" class="nav-link" id="nav- link">Login</a>
         </li>
     </ul>
 </nav>
